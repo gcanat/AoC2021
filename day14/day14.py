@@ -62,13 +62,6 @@ def insert_elem(pairs, insert, letter_count):
 
 
 def get_count(letter_count):
-    # letter_count = {}
-    # for pair in pairs.keys():
-    #     for x in (pair[0], pair[1]):
-    #         if x in letter_count.keys():
-    #             letter_count[x] += pairs[pair]
-    #         else:
-    #             letter_count[x] = pairs[pair]
     count = sorted(letter_count.items(), key=lambda kv: -kv[1])
     return count
 
